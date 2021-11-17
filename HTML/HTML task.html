@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="htmlcss.css">
+  <title>Registration</title>
+ </head>
+ <body>
+ <h1>ENTER YOUR DETAILS</h1>
+ <div class="registration">
+  <form action="welcome.html" method="GET">
+  
+  <label>Name &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+  <input type = "text" name="name" id="name" pattern="[A-Za-z0-9 ]{1,15}" required><br><br>
+  
+  <label>Task ID &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+  <input type="number" name="taskid" id="taskid" pattern="{1,4}" required><br><br>
+
+  <label>Description &nbsp&nbsp&nbsp:</label>
+  <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+
+  <label>Status &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+  <select name="status" value="status" id="status" required><option>
+  <option value=1 selected="true">SelectOne
+  <option value=2>Close
+  <option value=3>In Progress
+  <option value=4>Cancelled
+  <option value=5>On Hold
+  </select><br><br>
+
+  <label>Priority &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+  <select name="priority" value="priority" id="priority" required><option>
+  <option value=1 selected="true">Select One
+  <option value=2>1-High
+  <option value=3>2-Medium
+  <option value=4>3-Low
+  </select><br><br>
+
+  <label>Notes &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+  <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+
+  <label>Book Mark &nbsp&nbsp&nbsp&nbsp:</label>
+  <textarea id="bookmark" name="bookmark" rows="4" cols="50"></textarea><br><br>
+
+  <label>Owner ID &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+  <input type="number" name="ownerid" id="ownerid" pattern="{1,4}" required><br><br>
+
+  <label>Creater ID &nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+  <input type="number" name="createrid" id="createrid" pattern="{1,4}" required><br><br>
+
+  <label>Created On &nbsp&nbsp&nbsp&nbsp:</label>
+  <input type="date" id="createdon" required><br><br>
+  
+  <label>Modified On &nbsp&nbsp:</label>
+  <input type="date" id="modifiedon" required><br><br><br><br>
+
+
+  <center><input type="submit" name="log" id="log" value="Log In Here"></center> 
+</div>
+</body>
+</html>
