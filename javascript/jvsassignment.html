@@ -1,0 +1,20 @@
+<script> 
+function emp(id,name,dob,mobilenumber,address,course)
+{ 
+this.id=id; 
+this.name=name; 
+this.dob=dob; 
+this.mobilenumber=mobilenumber;
+this.address=address;
+this.course=course;
+this.changeaddress=changeaddress; 
+function changeaddress(otheraddress)
+{ 
+this.address=otheraddress; 
+} 
+} 
+e=new emp(21259,"M G Vivek","03-9-1999",9741741160,"bangalore","B.E"); 
+document.write(e.id+" "+e.name+" "+e.dob+" "+e.mobilenumber+" "+e.address+" "+e.course);
+e.changeaddress("bambay"); 
+document.write("<br>"+e.id+" "+e.name+" "+e.dob+" "+e.mobilenumber+" "+e.address+" "+e.course); 
+</script>

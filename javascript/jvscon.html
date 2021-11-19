@@ -1,0 +1,23 @@
+<script>
+var num = parseInt(prompt("enter a number"));
+var num1 = parseInt(prompt("in which form do you want to convert the give number for that choose these options (16)hexa ,(2)binary ,(8)oct ,(10) decimal"));
+switch (num1) {
+case 2:
+document.write("the number in binary is " + num.toString(2));
+break;
+case 8:
+document.write("the number in octal is " + num.toString(8));
+break;
+case 16:
+document.write("the number in hexa is " +num.toString(16));
+break;
+case 10:
+document.write("the number in decimal is " +num.toString(10));
+break;
+default:
+document.write("your selection is out of our imagination");
+
+
+
+}
+</script>

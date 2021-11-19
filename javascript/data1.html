@@ -1,0 +1,44 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title> form</title>
+</head>
+<body>
+<h2>student details</h2>
+<form action="/action_page.php">
+<label>student name:</label><br>
+<input type="text" id="fname" name="fname" value="eg:John"><br>
+<label>student id:</label><br />
+<input type="number" id="lname" name="lname" value="123"><br>
+<label>DOB:</label><br>
+<input type="date" id="lname" name="lname" value="2/1/21"><br>
+<label>mobile number:</label><br>
+<input type="number" id="lname" name="lname" value="2389585"><br>
+<label>address:</label><br>
+<input type="text" id="lname" name="lname" value="eg:newyork"><br><br>
+<label>course</label>
+<select id="item1" name="Item 1">
+<option value="1">b-tech</option>
+<option value="2">BE</option>
+</select><br /><br>
+<button onclick="message()">stream</button><br>
+try
+{
+if (
+<script>
+function message() {
+var s = document.getElementById('item1');
+var i = s.options[s.selectedIndex].value;
+if (i = 1) {
+document.write("1.cse<br>2.ece<br>3.mech");
+}
+else if (i = 2) {
+document.write("1.bse<br>2.msc<br>3.cec");
+}
+}
+
+</script><br />
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

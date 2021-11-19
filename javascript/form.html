@@ -1,0 +1,17 @@
+<html> 
+<head> 
+<title>conversion</title> 
+<script type="text/javascript"> 
+function upperMe() { 
+    document.getElementById("upper letters").value = document.getElementById("lower letters").value.toUpperCase(); 
+} 
+</script> 
+</head> 
+<body> 
+Enter letters to conversion from lowercase to uppercase:<br><br><br>
+<form name="convert"> 
+<input type="text"  id="lower letters" onchange="upperMe()" ><br><br><br>
+<input type="text"  id="upper letters" value="" > 
+</form> 
+</body> 
+</html> 

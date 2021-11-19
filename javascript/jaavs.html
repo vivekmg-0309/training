@@ -1,0 +1,34 @@
+<script>
+var emp = new Object();
+emp.name = prompt("Enter your name :");
+emp.id = parseInt(prompt("Enter your id :"));
+emp.dob = prompt("Enter your DOB :");
+emp.num = parseInt(prompt("Enter your Mobile Number :"));
+emp.addr = prompt("Enter your address :");
+emp.course = prompt("Enter your Course :");
+document.write("Employee Details : <br>"
++"Employee Name : "+ emp.name + "<br>"
++ "Employee ID : "+ emp.id + "<br>"
++ "Employee DOB : "+ emp.dob + "<br>"
++ "Employee Number : "+ emp.num + "<br>"
++ "Employee Address : "+ emp.addr + "<br>"
++ "Employee Course : "+ emp.course + "<br>"
+);
+var newaddr = prompt("Enter new Address : ");
+function changeaddr(newaddr) {
+
+emp.addr = newaddr;
+}
+changeaddr(newaddr);
+
+
+
+document.write("Employee Details after Address change :"+" <br>"
++ "Employee Name : " + emp.name + "<br>"
++ "Employee ID : " + emp.id + "<br
++ "Employee DOB : " + emp.dob + "<br>"
++ "Employee Number : " + emp.num + "<br>"
++ "Employee Address : " + emp.addr + "<br>"
++ "Employee Course : " + emp.course + "<br>"
+);
+</script>
