@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="htmlcss.css">
+  <title>Registration</title>
+ </head>
+ <body>
+ <div align="center">
+ <h1>ENTER YOUR DETAILS</h1>
+ <div class="registration">
+  <form action="welcome.html" method="GET">
+  <p>
+  
+  <label>Name :</label>
+  <input type = "text" name="name" id="name" pattern="[A-Za-z0-9 ]{1,15}" required><br><br>
+  
+  <label>Task ID:</label>
+  <input type="number" name="taskid" id="taskid" pattern="{1,4}" required><br><br>
+
+  <label>Description:</label>
+  <textarea id="description" name="description" ></textarea><br><br>
+
+  <label>Status :</label>
+  <select name="status" value="status" id="status" required><option>
+  <option value=1 selected="true">SelectOne
+  <option value=2>Close
+  <option value=3>In Progress
+  <option value=4>Cancelled
+  <option value=5>On Hold
+  </select><br><br>
+
+  <label>Priority:</label>
+  <select name="priority" value="priority" id="priority" required><option>
+  <option value=1 selected="true">Select One
+  <option value=2>1-High
+  <option value=3>2-Medium
+  <option value=4>3-Low
+  </select><br><br>
+
+  <label>Notes:</label>
+  <textarea id="notes" name="notes" ></textarea><br><br>
+
+  <label>Book Mark:</label>
+  <textarea id="bookmark" name="bookmark" ></textarea><br><br>
+
+  <label>Owner ID:</label>
+  <input type="number" name="ownerid" id="ownerid" pattern="{1,4}" required><br><br>
+
+  <label>Creater ID:</label>
+  <input type="number" name="createrid" id="createrid" pattern="{1,4}" required><br><br>
+
+  <label>Created On:</label>
+  <input type="date" id="createdon" required><br><br>
+  
+  <label>Modified On:</label>
+  <input type="date" id="modifiedon" required><br><br>
+
+
+  <center><input type="submit" name="log" id="log" value="Log In Here"></center> 
+  </p>
+</div>
+
+</body>
+</html>
