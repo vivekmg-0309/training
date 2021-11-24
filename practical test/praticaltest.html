@@ -1,0 +1,73 @@
+<html>
+<head> 
+<link rel="stylesheet" href="praticaltest.css">
+
+<title>Hotel vivek</title>
+
+<body>
+<div align="center">
+<h1><b>WELCOME TO HOTEL BOOKING</b></h1>
+<img src="hotel.jpg" alt="google"
+style="width:300px;height:200px"><br><br>
+
+<p>
+Customer Name:
+<input type="text" name="Customer Name" size=35 maxlength=35 value="" required> <BR> <br> 
+Customer address:
+<input type="text" name="Customer address" size=35 maxlength=35 value=""> <BR> <br> 
+Phone no:
+<input type="tel" name="Phone no"maxlength=10 value=""></br></br>
+Email: 
+<input type="email" name="email" size=35 maxlength=35 value=""> <BR> <br> 
+Start date:
+<input type="date" name="start" size=10 maxlength=10 value="">
+<br><br>
+End date:
+<input type="date" name="start" size=10 maxlength=10 value="">
+<br><br>
+Type of accomadation:
+<select name="Type of accomadation" ><option>
+<option value=1 >Single accomodation with AC (2000 rs)
+<option value=2 >Single accomodation without AC 2500 rs)
+<option value=3 >double accomodation with AC (5000 rs)
+<option value=4 >double accomodation without AC 4000 rs)
+</select> <br> <br>
+Extra Bed:
+<select name="Extra Bed"><option>
+<option value=1>(per extra bed 500 rs) 
+<option value=2> 1
+<option value=3> 2
+<option value=4> 3
+</select><br><br>
+Dormitary:
+<p>
+<input type="checkbox" name="6people">6 peoples(6000 rs)
+<input type="checkbox" name="10people">10 people(10000 rs)
+<input type="checkbox" name="20people">20 people(20000 rs)
+</p>
+
+<script>
+        function Calculate() {
+            var accomadation = parseInt(prompt("Enter the type of accomadation :"));
+            var Extra bed = parseInt(prompt("how many extra beds u want  :"));
+            var Dormitary = parseInt(prompt("Enter the type of Dormitary :"));
+            var app = accomadation *2000 ;
+            var man= Extra bed * 220;
+		    var oran = Dormitary * 80;
+			var result = app + man + oran;
+            alert("Your total Bill is amount : Rs." + result);
+        }
+    </script>
+    <form onsubmit="Calculate()" style="font-family: 'Courier New';">
+
+	<table
+	  <tr>
+     <td colspan="3" align="center"><button type="submit" >Purchase</button></td>
+     </tr>
+	 </form>
+	 </p>
+
+     </table>
+	 </body>
+
+</html>
