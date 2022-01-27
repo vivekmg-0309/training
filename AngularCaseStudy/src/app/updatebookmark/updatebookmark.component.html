@@ -1,0 +1,16 @@
+<div style="width: 400px;">
+   <form (ngSubmit)="onSubmit()">
+     <table>
+       <div class="form-group">
+           <label for="name">Task_ID</label>
+           <input type="text" class="form-control" id="taskId" required [(ngModel)]="taskId" name="taskId">
+         </div>
+     <div class="form-group">
+       <label for="name">Bookmark</label>
+       <input type="text" class="form-control" id="bookmark" required [(ngModel)]="bookmark" name="bookmark">
+     </div>
+
+     <button type="submit" class="btn btn-success">Submit</button>
+   </table>
+ </form>
+</div>

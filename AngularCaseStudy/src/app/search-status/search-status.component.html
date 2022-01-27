@@ -1,0 +1,74 @@
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    
+  </nav>
+  <div class="panel-heading">
+  
+  <div class="box-container">
+    <table class="elementsContainer">
+      <tr>
+        <td>
+      <input type="text" class="form-control" placeholder="status" [(ngModel)]="status">
+      </td>
+      <br>
+      <br>
+      <br>
+      <div class="input-group-append">
+        <br>
+        <br>
+        <br>
+
+        <td>
+          <button class="btn btn-primary" type="button" (click)="statuscheck()">
+             <i class="material-icons">search</i>
+          </button>
+        
+          </td>
+      </div>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="panel panel-primary">
+      <div class="panel-heading">
+  
+      </div>
+      <div class="panel-body">
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Task_ID</th>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Status</th>
+                  <th>Priority</th>
+                  <th>Notes</th>
+                  <th>Bookmark</th>
+                  <th>Owner_ID</th>
+                  <th>Creator_ID</th>
+                  <th>createdOn</th>
+                  <th>Notes</th>   
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let task of task">
+                  <td>{{task.taskId}}</td>
+                  <td>{{task.taskName}}</td>
+                  <td>{{task.description}}</td>
+                  <td>{{task.status}}</td>
+                  <td>{{task.priority}}</td>
+                  <td>{{task.notes}}</td>
+                  <td>{{task.bookmark}}</td>
+                  <td>{{task.ownerId}}</td>
+                  <td>{{task.creatorId}}</td>
+                  <td>{{task.createdOn}}</td>
+                
+                  
+                 </tr>
+                 </tbody>
+                 </table>
+                 </div>
+                 </div>
+  
+                 
+  

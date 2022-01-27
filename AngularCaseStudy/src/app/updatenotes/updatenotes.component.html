@@ -1,0 +1,21 @@
+<div align="center">
+    <h3> Add Notes</h3>
+    <div  [hidden]="updatednotes" style="width: 400px;">
+      <form (ngSubmit)="updateNotes()">
+    
+    
+       <div align="left" class="form-group">
+          <label for="name">Task Id</label>
+          <input type="number" class="form-control" id="taskId" required [(ngModel)]="task.taskId" name="taskId">
+        </div>
+      
+    <div align="left" class="form-group">
+       <label for="name">Notes</label>
+       <input type="string" class="form-control" id="Notes" name="notes" required [(ngModel)]="task.notes">
+    </div>
+    <br>
+    <button  class="btn-btn-success">Update</button>
+    </form>
+    </div>
+    </div>
+    
